@@ -10,7 +10,6 @@ const bodyParser=require("body-parser"),
 const app = express();
 const User= require('./models/user');
 
-// mongoose.connect("mongodb://localhost:27017/smartify_test", { useNewUrlParser: true });  
 mongoose.connect("mongodb://bhanu:bhanu1234@ds119688.mlab.com:19688/login-signup", { useNewUrlParser: true });  
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine","ejs");
